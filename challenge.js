@@ -8,13 +8,15 @@
     return sum;
   };
   
+
+  
   const findFrequency = function(array) {
     // your code here - don't forget to return an object!
     let answer = {
         most: '',
         least: ''
     };
-    let best_count = 0, least_count = Array.length;
+    let best_count = 0, least_count = array.length;
     for (let i = 0; i < array.length; i++) {
         let count = 0;
         for (let j = 0; j < array.length; j++) {
@@ -32,6 +34,8 @@
     }
     return answer;
 };
+  
+ 
   
  
 const isPalindrome = function(str) {
@@ -67,19 +71,4 @@ const isPalindrome = function(str) {
     return result 
   };
   
-  const scoreScrabble = function(str) {
-    // your code here - don't forget to return a number!
 
-    let sum=0
-
-    let str={   
-        1 : ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'],
-        2: ['d', 'g'],
-        3 :[ 'b', 'c', 'm', 'p'],
-        4 : ['f', 'h', 'v', 'w', 'y'],
-        5 : ['k'],
-        8 : ['j', 'x'],
-        10 : ['q', 'z'],
-    }
-
-  }
